@@ -1,0 +1,8 @@
+Cache Simulator Report
+Michael Comatas 177006210 mac776
+
+In this assigment I simulated a cache using different components. I made a data structure called a row that has three main components. It has a tag, valid, and time. Valid was an int that could be either 0 or 1 to indicate whether the block is empty or not. When the value is 0 it is empty and 1 otherwise. Tag is the tag index and time is used for LRU.
+
+I used a 2D array to hold the structure basing it off of the set and associtivity number. The set index numbers are natural numbers so it can be easy to find the right spot in the array. When writing in I would increase the count when there is a hit and then update the time variable to count. The least recently used would have the lowest count.
+
+When using prefetch the cache hits were at a noticeable increase and a decrease of misses which means the running time can be short based on locality.
